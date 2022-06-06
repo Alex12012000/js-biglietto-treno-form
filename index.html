@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <!-- FORM -->
     <div class="container">
-        <!-- FORM -->
         <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         <div class="form">
 
             <!-- User Name -->
             <div class="form-item">
                 <label for="user-name">Nome e Cognome</label>
-                <div class="div">
+                <div class="input">
                     <input type="text" id="user-name">
                 </div>
             </div>
@@ -25,7 +25,7 @@
             <!-- User Km -->
             <div class="form-item">
                 <label for="user-km">Km da percorrere</label>
-                <div>
+                <div class="input">
                     <input type="number" id="user-km">
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <!-- User Age -->
             <div class="form-item">
                 <label for="user-age">Fascia d'età</label>
-                <div>
+                <div class="input">
                     <select id="user-age">
 
                         <option value="maggiorenne">Maggiorenne</option>
@@ -43,21 +43,51 @@
                     </select>
                 </div>
             </div>
-        </div>
-
-        <!-- Buttons -->
-        <div class="buttons">
-            <button id="generate">Genera</button>
-            <button id="return">Annulla</button>
-        </div>
+            
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="generate">Genera</button>
+                <button id="return">Annulla</button>
+            </div>
+        
+        </div> 
 
     </div>
 
     <!-- TICKET -->
-    <div class="ticket">
-        <h3 id="name"></h3>
-        <h3 id="rate"></h3>
-        <h3 id="price"></h3>
+    <div class="container">
+        <h2>IL TUO BIGLIETTO</h2>   
+        <div class="ticket">
+            
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            
+            <!-- INFO -->
+            <div class="ticket-info">
+                <ul>
+                    <li>
+                        <h3>NOME PASSEGGERO</h3>
+                        <h4 id="name"></h4>
+                    </li>
+                    <li>
+                        <h4>Offerta</h4>
+                        <span id="rate"></span>
+                    </li>
+                    <li>
+                        <h4>Carrozza</h4>
+                        <span id="carriage"></span>
+                    </li>
+                    <li>
+                        <h4>Codice CP</h4>
+                        <span id="cp-code"></span>
+                    </li>
+                    <li>
+                        <h4>Costo biglietto</h4>
+                        <span id="price"></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>

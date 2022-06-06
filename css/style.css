@@ -5,3 +5,105 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+body {
+    background-color: #b91450;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* FORM */
+
+.form {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-item {
+    padding: 1.5rem 0;
+}
+
+.input {
+    padding: .5rem 0;
+}
+
+.buttons {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buttons button {
+    margin: 0 1rem;
+    padding: .5rem;
+    border-color: orange;
+    border-style: solid;
+    font-size: 18px;
+}
+
+.buttons button:hover {
+    color: #b91450;
+}
+
+/* TICKET */
+
+.ticket {
+    display: none;
+}
+
+.active {
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.ticket h3 {
+    width: 100%;
+}
+
+.ticket ul {
+    display: flex;
+    height: 100%;
+}
+
+.ticket ul li {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket ul li:first-child {
+    background-color: grey;
+    padding: 0.5rem;
+    display: block;
+}
+
+.ticket ul span {
+    padding-top: 3rem;
+}
+
+.ticket-info {
+    margin: 1rem 0;
+}
